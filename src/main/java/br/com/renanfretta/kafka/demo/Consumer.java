@@ -12,7 +12,7 @@ public class Consumer {
 
 	private final Logger logger = LoggerFactory.getLogger(Producer.class);
 
-	@KafkaListener(topics = Producer.TOPIC, groupId = "renanfretta")
+	@KafkaListener(topics = Producer.TOPIC, groupId = Producer.GROUPID)
 	public void consume(String message) throws IOException {
 		logger.info(String.format("#### -> Consumer > message -> %s", message));
 		try {

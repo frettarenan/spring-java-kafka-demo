@@ -12,7 +12,9 @@ public class Producer {
     private static final Logger logger = LoggerFactory.getLogger(Producer.class);
     
     public static final String TOPIC = "teste";
-
+    
+    public static final String GROUPID = "groupId";
+    
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
